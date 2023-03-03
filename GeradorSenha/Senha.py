@@ -6,4 +6,39 @@
 print ("Olá, Seja Bem Vindo ao Gerador de Senha.")
 chave = input ("Por favor digite uma palavra Chave para a sua senha: ")
 
-print ("Confirme sua Palavra Chave: ", chave)
+# Catálogo de Substituição de Letras
+
+senha = ""
+for letra in chave:
+    if letra in "a":
+        senha = senha + "@"
+    elif letra in "E": 
+        senha = senha + "3"
+    elif letra in "e": 
+        senha = senha + "&"
+    elif letra in "Ii": 
+        senha = senha + "!"
+    elif letra in "Oo": 
+        senha = senha + "0"
+    elif letra in "Uu": 
+        senha = senha + "*"
+    elif letra in "Ss": 
+        senha = senha + "$"
+    elif letra in "S": 
+        senha = senha + "$"
+    elif letra in "s": 
+        senha = senha + "§"
+    elif letra in "Tt": 
+        senha = senha + "?"
+    elif letra in "Cc": 
+        senha = senha + "¢"
+    elif letra in "Gg": 
+        senha = senha + "¨"
+    elif letra in "Bb": 
+        senha = senha + "5"
+    elif letra in "": 
+        senha = senha + "$"
+    else: senha = senha + letra
+
+print ("Sua Nova Senha é: ", senha)
+
