@@ -36,9 +36,15 @@ for letra in chave:
         senha = senha + "¨"
     elif letra in "Bb": 
         senha = senha + "5"
-    elif letra in "": 
-        senha = senha + "$"
+    elif letra in "m": 
+        senha = senha + "+"
+    elif letra in "n": 
+        senha = senha + "^"
+    elif letra in "r": 
+        senha = senha + "~"
+    elif letra in "Ll": 
+        senha = senha + "11"
     else: senha = senha + letra
 
+print ("Nova senha criada com Sucesso!!!!!")
 print ("Sua Nova Senha é: ", senha)
-
